@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'About - InnerGrove Yoga',
-  description: 'Learn about the instructor, background, and philosophy at InnerGrove Yoga.',
+  title: 'About - Inner Grove Yoga',
+  description: 'Learn about the instructor, background, and philosophy at Inner Grove Yoga.',
 };
 
 export default function About() {
@@ -19,9 +19,16 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start mb-16">
           <div className="md:col-span-2">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">My Story</h2>
+            <div className="md:hidden mb-8 w-full">
+              <img
+                src="/innergrove.yoga/JoshuaHeadshot.jpeg"
+                alt="Joshua Allen - Yoga Instructor"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
             <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
               <p>
-                Welcome. My name is Joshua Allen and I'm the owner of InnerGrove LLC, and I'm thrilled to share my passion for yoga and wellness with you.
+                Welcome. My name is Joshua Allen.  I'm the owner of Inner Grove LLC, and I'm thrilled to share my passion for yoga and wellness with you.
               </p>
               <p>
                 My journey with yoga began in 2011 as a way to recover from marathon training.  Though it started as physical practice, it transformed into a personal practice for healing and self-discovery. 
@@ -30,19 +37,26 @@ export default function About() {
                 the transformative power of yoga.
               </p>
               <p>
-                I now dedicate my time to both study, practice, and teaching.  
+                I dedicate my time to study, practice, and teaching.  
                 Each person's body, mind, and spirit are unique, and their practice should be too.
                 Yoga offers many tools for growth, healing, and holistic wellness.
                 I love helping others find what resonates most deeply with them.
               </p>
               <p>
-                At InnerGrove, I'm committed to creating a safe, welcoming space where you can explore your practice at your 
+                At Inner Grove, I'm committed to creating a safe, welcoming space where you can explore your practice at your 
                 own pace, free from judgment and full of support.
               </p>
             </div>
           </div>
 
           <div>
+            <div className="hidden md:block mb-8">
+              <img
+                src="/innergrove.yoga/JoshuaHeadshot.jpeg"
+                alt="Joshua Allen - Yoga Instructor"
+                className="w-full h-auto rounded-lg shadow-lg mb-8"
+              />
+            </div>
             <div className="bg-gradient-to-br from-green-700 to-teal-600 rounded-lg shadow-lg p-8 text-white">
               <h3 className="text-2xl font-bold mb-6">Key Areas of Focus</h3>
               <ul className="space-y-4">
@@ -89,16 +103,16 @@ export default function About() {
             <div className="border-l-4 border-green-700 pl-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Yoga Certification</h3>
               <p className="text-gray-600">200-Hour Yoga Teacher Training (as of Feb 2026: 199/216 hours completed.)</p>
-              <p className="text-sm text-gray-500">300-Hour Yoga Teacher Training (in progress)</p>
+              <p className="text-gray-600">300-Hour Yoga Teacher Training (in progress)</p>
             </div>
             <div className="border-l-4 border-green-700 pl-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Continuing Education</h3>
-              <p className="text-sm text-gray-500">Yoga Nidra Training scheduled for April 2026</p>
+              <p className="text-gray-600">Yoga Nidra Training scheduled for April 2026</p>
             </div>
             <div className="border-l-4 border-green-700 pl-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Daily Practice</h3>
               <p className="text-gray-600">Daily Hatha Yoga Practice</p>
-              <p className="text-sm text-gray-500">Daily Meditation Practice</p>
+              <p className="text-gray-600">Daily Meditation Practice</p>
             </div>
           </div>
         </div>
