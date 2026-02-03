@@ -21,17 +21,19 @@ export default function About() {
             <h2 className="text-3xl font-bold text-gray-900 mb-6">My Story</h2>
             <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
               <p>
-                Welcome. I'm the instructor at InnerGrove, and I'm thrilled to share my passion for yoga and wellness with you.
+                Welcome. My name is Joshua Allen and I'm the owner of InnerGrove LLC, and I'm thrilled to share my passion for yoga and wellness with you.
               </p>
               <p>
-                My journey with yoga began {/* Add your journey details here */} as a personal practice for healing and self-discovery. 
-                Over the years, what started as a personal practice evolved into a deep commitment to helping others experience 
+                My journey with yoga began in 2011 as a way to recover from marathon training.  Though it started as physical practice, it transformed into a personal practice for healing and self-discovery. 
+                Yoga for me is a holistic practice for physical, mental, emotional, and spiritual wellbeing.  
+                Now that personal practice has evolved into a deep commitment to helping others experience 
                 the transformative power of yoga.
               </p>
               <p>
-                Through years of dedicated study and practice, I've developed a unique approach to instruction that honors 
-                both traditional yoga wisdom and modern wellness science. I believe that yoga is not one-size-fits-all—each 
-                person's body, mind, and spirit are unique, and their practice should be too.
+                I now dedicate my time to both study, practice, and teaching.  
+                Each person's body, mind, and spirit are unique, and their practice should be too.
+                Yoga offers many tools for growth, healing, and holistic wellness.
+                I love helping others find what resonates most deeply with them.
               </p>
               <p>
                 At InnerGrove, I'm committed to creating a safe, welcoming space where you can explore your practice at your 
@@ -51,10 +53,6 @@ export default function About() {
                 <li className="flex items-start">
                   <span className="text-2xl mr-3">🕉️</span>
                   <span>Pranayama & Meditation</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-2xl mr-3">💪</span>
-                  <span>Strength & Alignment</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-2xl mr-3">☮️</span>
@@ -90,18 +88,17 @@ export default function About() {
           <div className="space-y-6">
             <div className="border-l-4 border-green-700 pl-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Yoga Certification</h3>
-              <p className="text-gray-600">200-Hour Yoga Teacher Training</p>
-              <p className="text-sm text-gray-500">Add certification details</p>
-            </div>
-            <div className="border-l-4 border-green-700 pl-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Years of Experience</h3>
-              <p className="text-gray-600">Add your years of teaching experience</p>
-              <p className="text-sm text-gray-500">Working with diverse populations and experience levels</p>
+              <p className="text-gray-600">200-Hour Yoga Teacher Training (as of Feb 2026: 199/216 hours completed.)</p>
+              <p className="text-sm text-gray-500">300-Hour Yoga Teacher Training (in progress)</p>
             </div>
             <div className="border-l-4 border-green-700 pl-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Continuing Education</h3>
-              <p className="text-gray-600">Ongoing study and specialized trainings</p>
-              <p className="text-sm text-gray-500">Add your specializations and continuing education</p>
+              <p className="text-sm text-gray-500">Yoga Nidra Training scheduled for April 2026</p>
+            </div>
+            <div className="border-l-4 border-green-700 pl-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Daily Practice</h3>
+              <p className="text-gray-600">Daily Hatha Yoga Practice</p>
+              <p className="text-sm text-gray-500">Daily Meditation Practice</p>
             </div>
           </div>
         </div>

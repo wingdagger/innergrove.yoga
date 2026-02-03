@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -15,18 +16,19 @@ export default function Home() {
                 Transform your body, mind, and spirit through personalized yoga instruction and wellness guidance.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/services" className="bg-white text-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 transition text-center">
-                  Explore Services
-                </Link>
                 <Link href="/contact" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-green-700 transition text-center">
                   Get Started
                 </Link>
               </div>
             </div>
-            <div className="hidden md:block">
-              <div className="w-full h-64 bg-green-500 rounded-lg shadow-xl flex items-center justify-center">
-                <span className="text-green-100 text-lg">Hero Image Placeholder</span>
-              </div>
+            <div className="hidden md:block relative w-full h-96">
+              <Image
+                src={`${process.env.__NEXT_PUBLIC_BASE_PATH || ''}/hero-image.jpeg`}
+                alt="InnerGrove Yoga"
+                fill
+                className="object-cover rounded-lg shadow-xl"
+                priority
+              />
             </div>
           </div>
         </div>
