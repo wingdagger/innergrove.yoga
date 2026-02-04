@@ -21,7 +21,7 @@ export default function About() {
             <h2 className="text-3xl font-bold text-gray-900 mb-6">My Story</h2>
             <div className="md:hidden mb-8 w-full">
               <img
-                src="/innergrove.yoga/JoshuaHeadshot.jpeg"
+                src="/JoshuaHeadshot.jpeg"
                 alt="Joshua Allen - Yoga Instructor"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -52,7 +52,7 @@ export default function About() {
           <div>
             <div className="hidden md:block mb-8">
               <img
-                src="/innergrove.yoga/JoshuaHeadshot.jpeg"
+                src="/JoshuaHeadshot.jpeg"
                 alt="Joshua Allen - Yoga Instructor"
                 className="w-full h-auto rounded-lg shadow-lg mb-8"
               />
@@ -102,8 +102,8 @@ export default function About() {
           <div className="space-y-6">
             <div className="border-l-4 border-green-700 pl-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Yoga Certification</h3>
-              <p className="text-gray-600">200-Hour Yoga Teacher Training (as of Feb 2026: 199/216 hours completed.)</p>
-              <p className="text-gray-600">300-Hour Yoga Teacher Training (in progress)</p>
+              <p className="text-gray-600">200-Hour Yoga Teacher Training IN PROGRESS (as of Feb 2026: 199/216 hours completed.)</p>
+              <p className="text-gray-600">300-Hour Yoga Teacher Training IN PROGRESS (as of Feb 2026: 88/300 hours completed.)</p>
             </div>
             <div className="border-l-4 border-green-700 pl-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Continuing Education</h3>

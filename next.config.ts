@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "export",
   reactCompiler: true,
-  basePath: "/innergrove.yoga",
+  basePath: process.env.NODE_ENV === "production" ? "/innergrove.yoga" : "",
   images: {
     unoptimized: true,
   },

@@ -27,20 +27,26 @@ export default function Contact() {
     setIsLoading(true);
 
     try {
-      // Here you would typically send the form data to your backend/email service
-      // For now, we'll just simulate a successful submission
-      console.log('Form submitted:', formData);
-      
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      setSubmitted(true);
-      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-      
-      // Reset success message after 5 seconds
-      setTimeout(() => setSubmitted(false), 5000);
+      const response = await fetch('https://formspree.io/f/mvzbppjr', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+        
+        // Reset success message after 5 seconds
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        alert('There was an error sending your message. Please try again.');
+      }
     } catch (error) {
       console.error('Error submitting form:', error);
+      alert('There was an error sending your message. Please try again.');
     } finally {
       setIsLoading(false);
     }
@@ -52,70 +58,20 @@ export default function Contact() {
       <div className="bg-gradient-to-r from-green-700 to-teal-600 text-white py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
+          <p className="text-lg mb-2 text-green-100">Based in Durham, NC</p>
           <p className="text-xl text-green-50">Let's start your yoga journey together</p>
         </div>
       </div>
 
-      {/* Contact Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Contact Info */}
-          <div className="lg:col-span-1">
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                  <span className="text-3xl mr-3">📧</span>
-                  Email
-                </h3>
-                <p className="text-gray-600">
-                  <a href="mailto:info@innergrove.yoga" className="text-green-700 hover:underline">
-                    info@innergrove.yoga
-                  </a>
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                  <span className="text-3xl mr-3">📱</span>
-                  Phone
-                </h3>
-                <p className="text-gray-600">
-                  <a href="tel:+1234567890" className="text-green-700 hover:underline">
-                    (123) 456-7890
-                  </a>
-                </p>
-                <p className="text-sm text-gray-500 mt-2">Available by appointment</p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
-                  <span className="text-3xl mr-3">📍</span>
-                  Location
-                </h3>
-                <p className="text-gray-600">
-                  Add Your City, State
-                </p>
-                <p className="text-sm text-gray-500 mt-2">Virtual sessions available</p>
-              </div>
-
-              <div className="bg-green-50 p-6 rounded-lg border border-green-200">
-                <h4 className="font-bold text-gray-900 mb-2">Response Time</h4>
-                <p className="text-gray-600 text-sm">
-                  I typically respond to inquiries within 24 hours. For urgent matters, please call.
-                </p>
-              </div>
-            </div>
+      {/* Contact Form */}
+      <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        {submitted && (
+          <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+            <p className="text-green-800 font-semibold">✓ Thank you for reaching out! I'll be in touch soon.</p>
           </div>
+        )}
 
-          {/* Contact Form */}
-          <div className="lg:col-span-2">
-            {submitted && (
-              <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
-                <p className="text-green-800 font-semibold">✓ Thank you for reaching out! I'll be in touch soon.</p>
-              </div>
-            )}
-
-            <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-900 mb-2">
@@ -209,8 +165,6 @@ export default function Contact() {
                 * Required fields
               </p>
             </form>
-          </div>
-        </div>
       </div>
 
       {/* FAQ Section */}
@@ -228,10 +182,9 @@ export default function Contact() {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Do you offer virtual sessions?</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Where do sessions take place?</h3>
               <p className="text-gray-600">
-                Yes! I offer both in-person and virtual sessions via video conferencing. This allows flexibility 
-                for those with scheduling constraints or who prefer practicing from home.
+                I offer in-person sessions only in the Durham, NC area. Sessions are personalized and tailored to meet you where you are in your yoga practice.
               </p>
             </div>
 

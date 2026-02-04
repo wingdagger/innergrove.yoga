@@ -11,18 +11,24 @@ export default function Home() {
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
                 Welcome to InnerGrove
               </h1>
+              <p className="text-lg mb-4 text-green-100">
+                Based in Durham, NC
+              </p>
               <p className="text-xl mb-8 text-green-50">
                 Transform your body, mind, and spirit through personalized yoga instruction and wellness guidance.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/writings" className="bg-white text-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 transition text-center">
+                  Explore My Writings
+                </Link>
                 <Link href="/about" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-green-700 transition text-center">
                   About
                 </Link>
               </div>
             </div>
-            <div className="hidden md:block w-full h-screen rounded-lg shadow-xl overflow-hidden">
+            <div className="w-full h-64 md:h-screen rounded-lg shadow-xl overflow-hidden">
               <img
-                src="/innergrove.yoga/hero-image.jpeg"
+                src="/hero-image.jpeg"
                 alt="InnerGrove Yoga"
                 className="w-full h-full object-cover"
               />
@@ -53,9 +59,9 @@ export default function Home() {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition">
-              <div className="text-4xl mb-4 text-green-700">✨</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Experienced Guidance</h3>
-              <p className="text-gray-600">Learn from an experienced instructor dedicated to your growth and wellbeing.</p>
+              <div className="text-4xl mb-4 text-green-700">🌱</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Safe & Supportive</h3>
+              <p className="text-gray-600">A welcoming space where you can practice at your own pace, free from judgment and full of encouragement.</p>
             </div>
           </div>
         </div>
@@ -69,7 +75,7 @@ export default function Home() {
             Discover how personalized yoga can transform your life. Reach out to learn more about services and get started with a consultation.
           </p>
           <Link href="/contact" className="bg-white text-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 transition inline-block">
-            Contact Us Now
+            Contact Me Now
           </Link>
         </div>
       </div>
