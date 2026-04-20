@@ -69,8 +69,8 @@ export default function About() {
                   <span>Pranayama & Meditation</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-2xl mr-3">☮️</span>
-                  <span>Holistic Wellness</span>
+                  <span className="text-2xl mr-3">💤</span>
+                  <span>Yoga Nidra</span>
                 </li>
               </ul>
             </div>
@@ -101,13 +101,37 @@ export default function About() {
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Qualifications & Experience</h2>
           <div className="space-y-6">
             <div className="border-l-4 border-green-700 pl-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Yoga Certification</h3>
-              <p className="text-gray-600">200-Hour Yoga Teacher Training IN PROGRESS (as of Feb 2026: 199/216 hours completed.)</p>
-              <p className="text-gray-600">300-Hour Yoga Teacher Training IN PROGRESS (as of Feb 2026: 88/300 hours completed.)</p>
-            </div>
-            <div className="border-l-4 border-green-700 pl-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Continuing Education</h3>
-              <p className="text-gray-600">Yoga Nidra Training scheduled for April 2026</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Certifications</h3>
+              <ul className="space-y-4">
+                <li className="text-gray-600">
+                  <span className="font-semibold text-gray-900">200-Hour Yoga Teacher Training</span>
+                  <br />
+                  <span className="text-sm">Yoga Legacy, Fuqua/Varina, NC</span>
+                  <br />
+                  <span className="text-sm">IN PROGRESS (as of Apr 2026: 199/216 hours completed)</span>
+                </li>
+                <li className="text-gray-600">
+                  <span className="font-semibold text-gray-900">300-Hour Yoga Teacher Training</span>
+                  <br />
+                  <span className="text-sm">Asheville Yoga Center, Asheville, NC</span>
+                  <br />
+                  <span className="text-sm">IN PROGRESS (as of April 2026: 128/300 hours completed)</span>
+                </li>
+                <li className="text-gray-600">
+                  <span className="font-semibold text-gray-900">41-Hour Yoga Nidra Certification</span>
+                  <br />
+                  <span className="text-sm">Satchidananda Ashram, Yogaville, VA</span>
+                  <br />
+                  <span className="text-sm">Completed April 2026</span>
+                </li>
+                <li className="text-gray-600">
+                  <span className="font-semibold text-gray-900">Reiki Level 1</span>
+                  <br />
+                  <span className="text-sm">Sweetwater Energy Healing, Graham, NC</span>
+                  <br />
+                  <span className="text-sm">Completed March 2026</span>
+                </li>
+              </ul>
             </div>
             <div className="border-l-4 border-green-700 pl-6">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Daily Practice</h3>

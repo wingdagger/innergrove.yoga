@@ -17,12 +17,15 @@ export default function Home() {
               <p className="text-xl mb-8 text-green-50">
                 Transform your body, mind, and spirit through personalized yoga instruction and wellness guidance.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/writings" className="bg-white text-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 transition text-center">
+              <div className="flex flex-col gap-4">
+                <Link href="/yoga-nidra" className="bg-white text-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 transition text-center">
+                  Yoga Nidra Sessions
+                </Link>
+                <Link href="/writings" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-green-700 transition text-center">
                   Explore My Writings
                 </Link>
                 <Link href="/about" className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-green-700 transition text-center">
-                  About
+                  About Me
                 </Link>
               </div>
             </div>
