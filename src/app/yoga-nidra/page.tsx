@@ -101,7 +101,7 @@ export default function YogaNidra() {
         <div className="bg-gray-50 rounded-lg p-8 md:p-12 mb-16">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Service Area</h2>
           <p className="text-gray-700 text-lg">
-            I offer Yoga Nidra sessions throughout the Raleigh, Durham, and Chapel Hill area. Sessions can be held at your location or arranged at a mutually convenient space.
+            I offer Yoga Nidra sessions throughout the Raleigh, Durham, and Chapel Hill (Triangle), NC area. Private sessions are held at my home in Durham, NC.  Group sessions can be held at your location or arranged at a mutually convenient space.
           </p>
         </div>
 
